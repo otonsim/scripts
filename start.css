@@ -1,0 +1,14 @@
+body {
+
+background:#1a1a1a;
+color:#008E62;
+text-align: center;
+font-size: 12px;
+
+}
+a:link {color:#00B37C;}     /* unvisited link */
+a:visited {color:#007f57;}  /* visited link   */
+a:hover {color:#58E0B5;}    /* mouse over link */
+a:active {color:#00ffb0;}   /* selected link  */
+
+
