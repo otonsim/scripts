@@ -1,0 +1,67 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* do not remove the @namespace line -- no one knows what it does */
+
+/* 
+The vimperator plugin is recommended[almost required] since this code removes alll but one button. vimperator can do everything the buttons do, but with keystrokes.
+
+feel free to clean up my horrible CSS. 
+*/
+
+/* cleaning up the interface ... */
+#nav-bar,
+#reload-button,
+#unified-back-forward-button,
+.searchbar-engine-image,
+.searchbar-engine-button,
+.search-go-container,
+.searchbar-dropmarker-image,
+.search-go-button,
+#page-proxy-favicon,
+#notification-popup-box,
+#plugins-notification-icon,
+.tab-throbber, 
+.tab-icon-image:not([pinned]), 
+.tab-close-button, 
+.tabs-newtab-button, 
+#appmenu-toolbar-button > .toolbarbutton-text, 
+#star-button { 
+  display: none !important; 
+}
+
+/* removing annoying tab gradients*/
+tab {
+  background:none !important
+}
+
+/* Tab formatting. found this on an old mozilla forum post. */
+.tabbrowser-tabs *|tab {
+  font-size: 12px !important;
+  min-height:0px !important;
+  height: 16px !important; 
+  width:16px !important;
+  min-width: 8px !important ;
+  margin:1px !important;
+}
+
+/* Making sure pins don't dissapear, while making stupid icons contextual to tabs only*/
+.tabbrowser-tabs:not([pinned]) tab{
+  text-align:center !important;
+  border:1px solid !important;
+  border-radius: 0px !important;
+}
+
+/* Make Inactive Tabs Transparent */
+.tabbrowser-tabs tab:not([selected="true"]) {
+  opacity:0.5;
+
+}
+/*
+.tabbrowser-tabs tab[selected="true"] {
+
+not sure what to put here, I could increase the margins to make the selected tab stand out more, but it seems uneeded with the inactive tab transparency.
+
+}*/
+
+.tabbrowser-tab .tab-icon {
+  display: none !important;
+}
+
