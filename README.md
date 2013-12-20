@@ -12,9 +12,10 @@ start.css/html - a crappy startpage I made for myself, with complete herp derp i
                  example 'file:///path/to/crappy/startpage/start.html'
 
 userChrome.css - a minimal[visually] firefox theme. Read the comments in the file for a better description.
-                 create a firefox profile by issuing the command 'firefox -p' in a terminal
-                 follow the profile creation diologue.
-                 create the chrome directory  'mkdir ~/.mozilla/firefox/*profile name*/chrome'
-                 place the userChrome.css file in ~/.mozilla/firefox/*profile name*/chrome/
+                 
+1.create a firefox profile by issuing the command 'firefox -p' in a terminal. 
+2.follow the profile creation diologue. 
+3.create the chrome directory  'mkdir ~/.mozilla/firefox/*profile name*/chrome'. 
+4.place the userChrome.css file in ~/.mozilla/firefox/*profile name*/chrome/. 
 
-                 it requires no visual plugins. I hope to make it usable for everyone, and the new firefox UI.
+it requires no visual plugins. I hope to make it usable for everyone, and the new firefox UI.
