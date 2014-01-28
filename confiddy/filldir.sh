@@ -1,6 +1,12 @@
 #!/bin/bash
 
 # a script to automatically configure future arch linux builds.
+# Work In Progress
+
+# to use on a fresh system, be sure to remove line 10, then replace every instance of fakeHOME with HOME
+
+# disclaimer - this script can be dangerous if you do now know what you are doing, if you do not know what 
+# you are doing then you should be setting up arch manually anyway[because thats the whole point of arch right?].
 
 fillder() {
 # creating a temporary fakehome to grease development and protect my actual $HOME
@@ -60,5 +66,8 @@ editmake() {
 fillder
 getgit
 getsuckless
+getX11
 editmake
+
+
 exit 0;

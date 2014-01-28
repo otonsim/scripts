@@ -19,3 +19,7 @@ userChrome.css - a minimal[visually] firefox theme. Read the comments in the fil
 4.place the userChrome.css file in ~/.mozilla/firefox/*profile name*/chrome/. 
 
 it requires no visual plugins. I hope to make it usable for everyone, and the new firefox UI.
+
+confiddy - contains two post installation scripts for arch-linux, filldir.sh configures a freshly installed arch system with my
+ usual set of directories. then it gits/configures/installs xorg, dwm, and dmenu from arch repos/suckless.org.
+read the file for more info.
