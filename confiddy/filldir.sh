@@ -15,7 +15,7 @@ fillder() {
 # creating directories only if inside the correct home dir
   if [ "$(pwd)" == "$fakeHOME" ]
   then
-	  mkdir -p {bui,aud,vid,img,bui/scripts,bui/SEE,bui/bash,bui/.haskell,bui/proj};
+	  mkdir -pv {bui/{SEE,bash,.haskell,proj},aud,vid,img,};
   else
 	  echo "you need to be in your home directory, --> '$HOME'";
   fi
